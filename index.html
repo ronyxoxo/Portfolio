@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumyadeep Chakraborty - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>Soumyadeep Chakraborty</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">&#9776;</div>
+    </nav>
+
+    <section id="home" class="home-section">
+        <div class="intro">
+            <h2 class="animated-text">Hi, It's Soumyadeep</h2>
+            <h3>I'm a Future Software Engineer</h3>
+            <p>
+                Hello! I'm a first-year engineering student pursuing a Bachelor of Technology in Computer Science and Information Technology (CSIT). 
+                I’m passionate about exploring technology, with a growing interest in software development, data science, and problem-solving.
+            </p>
+            <div class="buttons">
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="timeline-section">
+        <h2 class="section-header">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span>2028</span>
+                <h3>B.Tech in Computer Science and Information Technology</h3>
+                <p>University of Engineering & Management (UEM), Kolkata</p>
+            </div>
+            <div class="timeline-item">
+                <span>2024</span>
+                <h3>Class 11-12</h3>
+                <p>Saltlake Shiksha Niketan (CBSE Board)</p>
+            </div>
+            <div class="timeline-item">
+                <span>2022</span>
+                <h3>Class 10</h3>
+                <p>St. Joans School (ICSE Board)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+        <h2 class="section-header">Experience</h2>
+        <p>None</p>
+    </section>
+
+    <section id="publications" class="publications-section">
+        <h2 class="section-header">Paper/Patent Publications</h2>
+        <p>N/A</p>
+    </section>
+
+    <section id="awards" class="awards-section">
+        <h2 class="section-header">Awards and Achievements</h2>
+        <p>N/A</p>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="section-header">Projects</h2>
+        <p>N/A</p>
+    </section>
+
+    <section id="membership" class="membership-section">
+        <h2 class="section-header">Membership</h2>
+        <p>N/A</p>
+    </section>
+
+    <section id="research" class="research-section">
+        <h2 class="section-header">Research Thrust Area</h2>
+        <p>N/A</p>
+    </section>
+
+    <section id="events" class="events-section">
+        <h2 class="section-header">List of Events (Organized/Attended)</h2>
+        <p>Attended Smart Makers Festival 2024, Kolkata</p>
+    </section>
+
+    <section id="presentations" class="presentations-section">
+        <h2 class="section-header">Poster/Paper Presentation</h2>
+        <p>Presented poster on Nanoparticles</p>
+    </section>
+
+    <section id="courses" class="courses-section">
+        <h2 class="section-header">Courses Completed (NPTEL/COURSERA/LinkedIn Learning)</h2>
+        <p>NPTEL</p>
+    </section>
+
+    <section id="contact">
+    <h2 class="section-header">Contact</h2>
+    <p> <a href="mailto:soumyadeepchakraborty95612@gmail.com"><i class="fas fa-envelope"></i> soumyadeepchakraborty95612@gmail.com</a></p>
+    <p> <a href="https://linkedin.com/in/soumyadeep-chakraborty-682450335" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/soumyadeep-chakraborty-682450335</a></p>
+</section>
+
+    </section>
+
+    <script>
+        // Fade in effect for section headers
+        const sectionHeaders = document.querySelectorAll('.section-header');
+        window.addEventListener('scroll', () => {
+            sectionHeaders.forEach(header => {
+                const rect = header.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    header.classList.add('fade-in');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
