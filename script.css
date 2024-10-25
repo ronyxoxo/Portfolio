@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #000;
+    color: #f7f7f7;
+    line-height: 1.6;
+  }
+  
+  nav {
+    background-color: #121212;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav h1 {
+    color: #00ffcc;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  nav ul li a:hover {
+    color: #00ffcc;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #00ffcc;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  nav ul li a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0a0a0a;
+    text-align: center;
+  }
+  
+  .animated-text {
+    animation: fadeInSlide 1s ease-in-out;
+  }
+  
+  .intro h2 {
+    color: #00ffcc;
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .intro h3 {
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .intro p {
+    font-size: 1.1em;
+    color: #d9d9d9;
+    margin-bottom: 30px;
+  }
+  
+  .buttons a {
+    color: #00ffcc;
+    padding: 10px 20px;
+    border: 2px solid #00ffcc;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .buttons a:hover {
+    background-color: #00ffcc;
+    color: #000;
+  }
+  
+  .timeline-section {
+    padding: 50px 0;
+    background-color: #0d0d0d;
+    text-align: center;
+  }
+  
+  .timeline-section h2 {
+    font-size: 2.5em;
+    color: #00ffcc;
+    margin-bottom: 30px;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 50px;
+    border-left: 3px solid #00ffcc;
+  }
+  
+  .timeline-item {
+    margin: 30px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .timeline-item::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #00ffcc;
+    border-radius: 50%;
+    position: absolute;
+    left: -35px;
+    top: 0;
+  }
+  
+  .timeline-item span {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .timeline-item h3 {
+    font-size: 1.5em;
+    color: #00ffcc;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-item p {
+    color: #d9d9d9;
+    font-size: 1.1em;
+  }
+  
+  #contact {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2.5em;
+    color: #00ffcc;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    font-size: 1.2em;
+    color: #d9d9d9;
+  }
+  
+  /* Section Headers */
+  .section-header {
+      text-align: center;
+      font-size: 2.5em;
+      color: #00ffcc;
+      margin: 50px 0 20px;
+      opacity: 0; /* Initially hidden */
+      transition: opacity 1s ease-in-out;
+  }
+  
+  /* Center Align Paragraphs in Sections */
+  section p {
+      text-align: center; /* Center align paragraphs in all sections */
+      font-size: 1.2em; /* Optional: uniform font size for paragraphs */
+      color: #d9d9d9; /* Optional: uniform color for paragraphs */
+  }
+  
+  /* Fade-in effect */
+  .fade-in {
+      opacity: 1; /* Make it visible */
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeInSlide {
+      from {
+          opacity: 0;
+          transform: translateY(20px); /* Slide from below */
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0); /* End at original position */
+      }
+  }
+  
